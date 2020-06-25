@@ -1,0 +1,76 @@
+div,body .ui-table .u-table-thead {
+    padding: 0.571em 0;
+    border: 1px solid #F1D4D4;
+    font-weight: 700;
+    color:#484C7F;
+    background-color :white;
+    width: 100%;
+   
+}
+
+.container{
+    background-color: #484C7F;
+    width: 100%;
+    min-width:'500px';
+    max-width: 100%;
+}
+
+ #name{
+  
+    height: 30px;outline: none;
+    border: none;
+    width: 100%;
+    outline: 0;
+    padding: 5px 30px;
+    border-bottom: 1.5px solid rgb(174, 174, 194);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    
+
+    
+}
+
+.input-icons i { 
+    position: absolute; 
+    padding: 5px 10px;
+} 
+  
+.input-icons { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    border: none;
+} 
+  
+.icon { 
+    padding: 10px; 
+    min-width: 40px; 
+} 
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 0.4s 0.4s ease; 
+    text-indent: -100%;
+    opacity: 1;
+    color:#484C7F;
+ }
+
+
+
+th{
+    background-color : #DDB6C6 !important;
+     color: white !important;
+}
+
+tr:nth-child(even) {
+    background: #AC8DAF !important;
+    color: white !important;
+}
+tr:nth-child(odd) {
+    background: #484C7F !important;
+    color: white !important;
+}
+
+
+
+   
+
+

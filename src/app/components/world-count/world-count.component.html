@@ -1,0 +1,32 @@
+<div class="alert alert-info" role="alert" [style]="{'min-width':'500px'}">
+    <h4 class="alert-heading s">World Corona Updates</h4>
+   
+  </div>
+<div class="table ui-table " *ngIf = "worldStat">
+   
+        <div class="p-col-offset-6 p-md-9 p-lg-12">
+            <p-table [value]="colls"  [style]="{'min-width':'500px'}">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Active Cases</th>
+                        <th>New Cases</th>
+                        <th>New Deaths</th>
+                        <th>Total Cases</th>
+                        <th>Total Deaths</th>
+                        <th>Total Recovered</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" class="t-body">
+                    <tr>
+                        <td>{{worldStat.active_cases}}</td>
+                        <td>{{worldStat.new_cases}}</td>
+                        <td >{{worldStat.new_deaths}}</td>
+                        <td >{{worldStat.total_cases}}</td>
+                        <td >{{worldStat.total_deaths}}</td>
+                        <td >{{worldStat.total_recovered}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </div>
+    </div>
+   

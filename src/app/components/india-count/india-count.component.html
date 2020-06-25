@@ -1,0 +1,34 @@
+<div class="alert alert-info" role="alert" [style]="{'min-width':'500px'}">
+    <h4 class="alert-heading s">India Corona Updates</h4>
+   
+  </div>
+  <div class="table ui-table  ">
+   
+    <div class="p-col-offset-6 p-md-9 p-lg-12" >
+        <p-table [value]="colls" [loading]="loading" [style]="{'min-width':'500px'}" >
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>State Name</th>
+                    <th>Active Cases</th>
+                   
+                    <th>Total Cases</th>
+                    <th>Total Deaths</th>
+                    <th>Total Recovered</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body">
+                <tr  *ngFor="let state of indiaStat">
+                    <td *ngIf="state.name">{{state.name}}</td>
+                    <td *ngIf="state.name">{{state.cases}}</td>
+                    <td *ngIf="state.name">{{state.cases -(-state.recovered) -(-state.deaths)}}</td>
+                    
+                    <td *ngIf="state.name">{{state.deaths}}</td>
+                    <td *ngIf="state.name">{{state.recovered}}</td>
+                   
+                </tr>
+            </ng-template>
+           
+            
+        </p-table>
+    </div>
+</div>
