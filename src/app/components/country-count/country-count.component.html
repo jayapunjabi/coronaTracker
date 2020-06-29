@@ -1,6 +1,10 @@
-<div class="ui-table ui-table-thead">
+<div class="alert alert-info" role="alert" >
+  <h4 class="alert-heading s" style="text-align: center;">Global Corona Updates</h4>
+ 
+</div>
+<div class="ui-table ui-table-thead table">
     <p-table #dt [columns]="cols" [value]="countryStat"  
-    [scrollable]="true" [style]="{'min-width':'500px'}"
+    [scrollable]="true"
       [loading]="loading"
       [paginator]="true" [rows]="12" [showCurrentPageReport]="true"
 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">

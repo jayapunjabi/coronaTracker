@@ -12,6 +12,8 @@ import { WorldCountComponent } from './components/world-count/world-count.compon
 import { IndiaCountComponent } from './components/india-count/india-count.component';
 import { HeaderComponent } from './components/header/header.component';
 
+import { FooterComponent } from './components/footer/footer.component';
+
 
 
 
@@ -23,7 +25,9 @@ import { HeaderComponent } from './components/header/header.component';
     CountryCountComponent,
     WorldCountComponent,
     IndiaCountComponent,
-    HeaderComponent
+    HeaderComponent,
+  
+    FooterComponent
   ],
   imports: [
     BrowserModule,

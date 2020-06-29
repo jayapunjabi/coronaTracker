@@ -4,20 +4,19 @@
     font-family: Georgia, 'Times New Roman', Times, serif 
 }
 
+
 .btn {
-    border: solid 2px blueviolet;
+    border: solid 2px rgb(129, 134, 133);
     color: white;
-    background-color: blueviolet;
+    background-color: rgb(112, 121, 119);
 }
 
 .btn:hover{
-    background-color: rgb(168, 145, 190);
+    background-color: rgb(231, 230, 233);
+    color: black;
 }
 
-.row{
-    padding-left: 5rem;
-    padding-bottom: 5rem;
-}
+
 
 h2{
     font-weight: bold;

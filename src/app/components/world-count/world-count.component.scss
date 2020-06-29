@@ -10,18 +10,23 @@ th {
     width: 100%;
 }
 th{
-    background-color : #DDB6C6 !important;
+    background-color : #000000 !important;
      color: white !important;
 }
-
 tr:nth-child(even) {
-    background: #AC8DAF !important;
-    color: white !important;
+    background: #f5f2f5 !important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
 }
 tr:nth-child(odd) {
-    background: #484C7F !important;
-    color: white !important;
+    background: #ffffff !important;
+    color: rgb(0, 0, 0) !important;
 }
+table{
+    padding-top: 50px;
+ }
+ 
+
 
 .ui-table-tbody{
     padding:0 0;

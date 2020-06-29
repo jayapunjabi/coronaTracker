@@ -18,9 +18,10 @@ th {
     overflow-wrap: normal;
      padding: 0 0;
     width: 100%;
+    font-weight: bold;
 }
 th{
-    background-color : #DDB6C6 !important;
+    background-color : #000000 !important;
      color: white !important;
 }
 table{
@@ -28,12 +29,12 @@ table{
 }
 
 tr:nth-child(even) {
-    background: #AC8DAF !important;
-    color: white !important;
+    background: #f5f2f5 !important;
+    color: rgb(0, 0, 0) !important;
 }
 tr:nth-child(odd) {
-    background: #484C7F !important;
-    color: white !important;
+    background: #ffffff !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 .ui-table-tbody{

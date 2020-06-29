@@ -37,9 +37,9 @@ export class CountryCountComponent implements OnInit {
     { field: 'country_name' , header: 'Country'},
     { field: 'cases' , header: 'Cases'},
     { field: 'deaths' , header: 'Deaths'},
-    { field: 'total_recovered' , header: 'Recovered'},
     { field: 'new_cases' , header: 'New Cases Today'},
-    { field: 'new_deaths' , header: 'New Deaths Today'},
+    { field: 'total_recovered' , header: 'Recovered'}
+    
     
     ];
   }

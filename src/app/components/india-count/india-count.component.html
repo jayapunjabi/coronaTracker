@@ -1,11 +1,11 @@
-<div class="alert alert-info" role="alert" [style]="{'min-width':'500px'}">
+<div class="alert alert-info" role="alert" >
     <h4 class="alert-heading s">India Corona Updates</h4>
    
   </div>
   <div class="table ui-table  ">
    
     <div class="p-col-offset-6 p-md-9 p-lg-12" >
-        <p-table [value]="colls" [loading]="loading" [style]="{'min-width':'500px'}" >
+        <p-table [value]="colls" [loading]="loading" >
             <ng-template pTemplate="header">
                 <tr>
                     <th>State Name</th>
@@ -22,8 +22,8 @@
                     <td *ngIf="state.name">{{state.cases}}</td>
                     <td *ngIf="state.name">{{state.cases -(-state.recovered) -(-state.deaths)}}</td>
                     
-                    <td *ngIf="state.name">{{state.deaths}}</td>
-                    <td *ngIf="state.name">{{state.recovered}}</td>
+                    <td *ngIf="state.name" style="color: red;">{{state.deaths}}</td>
+                    <td *ngIf="state.name" style="color: green;">{{state.recovered}}</td>
                    
                 </tr>
             </ng-template>
