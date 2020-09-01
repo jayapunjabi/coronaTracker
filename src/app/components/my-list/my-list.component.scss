@@ -1,0 +1,32 @@
+h4{
+    text-align: center;  
+}
+
+th{
+    background-color : #000000 !important;
+}
+
+tr:nth-child(even) {
+    background: #f5f2f5  !important;
+}
+tr:nth-child(odd) {
+    background: #ffffff !important;
+}
+
+table,
+tr,
+td,
+th {
+    border: 2px solid black;
+    font-family:to-upper-case;
+    color: white !important;
+    font-weight: bold;
+}
+table{
+    margin-top: 45px;
+    table-layout: auto;
+}
+td{
+    padding-top: 5px;
+    color:rgb(0, 0, 0) !important;
+}

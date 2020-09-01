@@ -4,6 +4,7 @@ import { MainComponent } from './components/main/main.component';
 import { WorldCountComponent } from './components/world-count/world-count.component';
 import { CountryCountComponent } from './components/country-count/country-count.component';
 import { IndiaCountComponent } from './components/india-count/india-count.component';
+import { MyListComponent } from './components/my-list/my-list.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'home', component: MainComponent },
   { path: 'worldcounter', component: WorldCountComponent },
   { path: 'countrycounter', component: CountryCountComponent },
-  { path: 'indiacounter', component: IndiaCountComponent }    
+  { path: 'indiacounter', component: IndiaCountComponent },
+  { path: 'myList', component: MyListComponent }       
 ];
 
 @NgModule({

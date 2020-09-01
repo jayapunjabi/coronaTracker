@@ -17,21 +17,44 @@ currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
             <label for="name"></label>
           </div>
       </ng-template>
+      
       <ng-template pTemplate="header" let-columns>
         <tr>
+          <th>Select</th>
           <th *ngFor="let col of columns" >
             {{col.header}}
+          </th>
+          <th>
+            Action
           </th>
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-rowData let-columns="columns">
         <tr>
+          <td><input type="checkbox" name="name1" /></td>
           <td  *ngFor="let col of columns">
-            <span class="ui-g">
+           
               {{rowData[col.field]}}
-            </span>
+           
+          </td>
+          <td style="text-align: center;font-size: 1 em">
+            <button  class="btn btn-primary" pButton type="button" value="Save" label="Save" (click)="confirm1(rowData)">Save</button>
           </td>
         </tr>
       </ng-template>
+      <ng-template pTemplate="summary">
+        <ul>
+            <li *ngFor="let country of selectedValues" >
+                You have Selected :{{country.country_name + ' , ' + "Cases  " +country.cases + ' , ' +
+             "Deaths "+ country.deaths + ' , ' +"Recovered "+ country.total_recovered +' , ' + "New Cases "+country.new_cases 
+              + ' , ' +"New Deaths "+
+            country.new_deaths}}
+            </li>
+
+        </ul>
+    </ng-template>
     </p-table>
   </div>    
+  <div class="chart-container" style="position: relative; height:50vh; width:100vw">    
+    <canvas id="canvas" >{{ Linechart }}</canvas>    
+  </div>

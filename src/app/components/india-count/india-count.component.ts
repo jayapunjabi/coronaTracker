@@ -18,7 +18,7 @@ export class IndiaCountComponent implements OnInit {
   ngOnInit() {
     this.dataService.getIndiaCount().subscribe((res) => {
       this.indiaStat = res;
-      console.log('India', this.indiaStat);
+      console.log('India',res);
       this.loading = false;
     });
     this.colls = [{ field: 'active_cases' }];

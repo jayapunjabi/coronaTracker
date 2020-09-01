@@ -1,5 +1,5 @@
 body .ui-table .u-table-thead {
-    padding: 0.571em 0;
+    padding: 0 0;
     border: 1px solid #F1D4D4;
     font-weight: 700;
     color:#484C7F;
@@ -80,29 +80,62 @@ tr td:nth-child(5) {
 }
 
 @media screen and (max-width: 500px) {
-    div.table {
-        font-size: 14px;
+    div.ui-table-tbody .ui-table {
+        font-size: 12px;
         text-align: left;
+    }
+    canvas{
+        font-size: 12px;
+        height: 600px;
+
     }
 }
 @media screen and (min-width: 600px) {
-    div.table {
-        font-size: 22px;
+    div.ui-table-tbody .ui-table {
+        font-size: 12px;
         text-align: left;
        
+    }
+    canvas{
+        font-size: 12px;
+        height: 600px;
+
     }
 
 }
 
 @media screen and (min-width: 300px) {
-    div.table {
-        font-size: 18px;
+    div.ui-table-tbody .ui-table {
+        font-size: 12px;
         text-align: left;
        
 }
+
+    canvas{
+        font-size: 12px;
+        height: 600px;
+
+    }
 
 }
 
    
 
+
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+    font-family:to-upper-case;
+    overflow-wrap: normal;
+     padding: 0.5em 0.2em !important;
+    width: 100%;
+    font-weight: bold;
+    // font-size: 12px;
+}
+
+body .ui-table .ui-table-tbody > tr > td {
+    padding: 0 0 !important;
+}
 

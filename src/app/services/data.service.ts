@@ -8,7 +8,7 @@ export class DataService {
 
   CountryWiseStatURL = 'https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php'
   worldStatURL = 'https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php'
-  IndiaStatURL = 'https://coronavirus-tracker-india-covid-19.p.rapidapi.com/api/getStatewise';
+  IndiaStatURL = "https://api.covid19india.org/state_district_wise.json";
   constructor(private httpClient: HttpClient) { }
 
   getGlobalData() {
@@ -45,17 +45,7 @@ export class DataService {
   }
 
   getIndiaCount() {
-    const headers = {
-      
-        headers: new HttpHeaders({
-      "x-rapidapi-host": "coronavirus-tracker-india-covid-19.p.rapidapi.com",
-      "x-rapidapi-key": "56bb86f2a2msh86183c17fc28025p1a3601jsnf33e46f129cb",
-      "useQueryString": 'true'
-    })
-    };
-    
-    return this.httpClient.get(this.IndiaStatURL, headers);
-
+    return this.httpClient.get(this.IndiaStatURL);
   }
 
 }
